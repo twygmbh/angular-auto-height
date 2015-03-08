@@ -27,10 +27,11 @@
             return _results;
           };
           angular.element($window).bind('resize', function() {
-            var additionalHeight, parentHeight;
+            var additionalHeight, parentHeight, property;
             additionalHeight = $attrs.additionalHeight || 0;
             parentHeight = $window.innerHeight - $element.parent()[0].getBoundingClientRect().top;
-            return $element.css('height', parentHeight - combineHeights(siblings($element)) - additionalHeight);
+            property = $attrs.autoHeight === 'min-height' ? 'min-height' : 'height'
+            return $element.css(property, parentHeight - combineHeights(siblings($element)) - additionalHeight);
           });
           return $timeout(function() {
             return angular.element($window).triggerHandler('resize');
