@@ -12,7 +12,7 @@ angular.module('twygmbh.auto-height', []).
       angular.element($window).bind 'resize', ->
         additionalHeight = $attrs.additionalHeight || 0
         parentHeight = $window.innerHeight - $element.parent()[0].getBoundingClientRect().top
-        property = $attrs.autoHeight === 'min-height' ? 'min-height' : 'height'
+        property = if $attrs.autoHeight == 'min-height' then 'min-height' else 'height'
         $element.css(property, (parentHeight - combineHeights(siblings($element)) - additionalHeight))
 
       $timeout ->
