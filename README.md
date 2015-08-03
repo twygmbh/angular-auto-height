@@ -59,3 +59,7 @@ Please submit a new issue.
 3. Push to your branch - `git push origin my_branch`
 4. Send me a pull-request for your topic branch
 5. That's it!
+
+### License
+
+Released Under [MIT License](https://github.com/twygmbh/angular-auto-height/blob/master/LICENSE).
