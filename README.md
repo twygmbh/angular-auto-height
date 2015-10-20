@@ -39,14 +39,29 @@ config(function () {
 Use it in your html:
 
 ```
-<div class="parent">
-    <div class="sibling">I need some space too</div>
+<div id="parent">
+    <div id="sibling">I need some space too</div>
     <div auto-height>
         I stretch to the available height,
         calculated from the height available from .parent and my siblings.
     </div>
 </div>
 ```
+
+Optional automatic height update based on changes to other elements:
+
+ ```
+ <div id="parent">
+     <div id="sibling">I need some space too</div>
+     <div auto-height observe-height-of="parent">
+         I stretch to the available height,
+         calculated from the height available from parent and my siblings.
+         Also, if my parent dynamically changes height, I recalculate my height!
+     </div>
+ </div>
+ ```
+
+ 
 
 ## Community
 
