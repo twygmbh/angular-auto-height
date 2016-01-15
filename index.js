@@ -1,2 +1,2 @@
 require('./dist/auto-height');
-module.exports = 'twygmbh.auto-height';
+module.exports = 'm43nu.auto-height';

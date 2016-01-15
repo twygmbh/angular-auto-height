@@ -5,7 +5,7 @@
 ### bower:
 
 ```
-$ bower install twygmbh/angular-auto-height
+$ bower install m43nu/angular-auto-height
 ```
 
 Include it in your angular-app:
@@ -13,7 +13,7 @@ Include it in your angular-app:
 ```
 angular.module('myApp', [
   // ...
-  'twygmbh.auto-height'
+  'm43nu.auto-height'
 ]).
 config(function () {
   // ...
@@ -31,6 +31,23 @@ Include it in your angular-app:
 angular.module('myApp', [
   // ...
   require('angular-auto-height')
+]).
+config(function () {
+  // ...
+```
+
+### NuGet:
+
+```
+$ Install-Package AngularAutoHeight
+```
+
+Include it in your angular-app:
+
+```
+angular.module('myApp', [
+  // ...
+  'm43nu.auto-height'
 ]).
 config(function () {
   // ...
@@ -83,4 +100,4 @@ Please submit a new issue.
 
 ### License
 
-Released Under [MIT License](https://github.com/twygmbh/angular-auto-height/blob/master/LICENSE).
+Released Under [MIT License](https://github.com/m43nu/angular-auto-height/blob/master/LICENSE).
