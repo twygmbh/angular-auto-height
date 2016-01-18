@@ -53,8 +53,8 @@ config(function () {
   // ...
 ```
 
-Use it in your html:
-
+##Use it in your html:
+###Basic
 ```
 <div class="parent">
     <div class="sibling">I need some space too</div>
@@ -65,7 +65,8 @@ Use it in your html:
 </div>
 ```
 
-Optional automatic re-calculation of height based on changes to other elements:
+###Automatic recalculation of height:
+_Note: This feature requires support of MutationObserver - see http://caniuse.com/#feat=mutationobserver_
 
  ```
  <div id="parent">
