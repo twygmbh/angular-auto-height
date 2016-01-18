@@ -66,8 +66,6 @@ config(function () {
 ```
 
 ###Automatic recalculation of height:
-_Note: This feature requires support of MutationObserver - see http://caniuse.com/#feat=mutationobserver_
-
  ```
  <div id="parent">
      <div id="sibling">I need some space too</div>
@@ -78,6 +76,10 @@ _Note: This feature requires support of MutationObserver - see http://caniuse.co
      </div>
  </div>
  ```
+ 
+This is useful when dynamically changing the height of elements (e.g. when collapsing/expanding sections using http://angular-ui.github.io/bootstrap/#/collapse)
+
+_Note: This feature requires support of MutationObserver - see http://caniuse.com/#feat=mutationobserver_
 
  
 
