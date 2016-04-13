@@ -53,8 +53,8 @@ config(function () {
   // ...
 ```
 
-Use it in your html:
-
+##Use it in your html:
+###Basic
 ```
 <div class="parent">
     <div class="sibling">I need some space too</div>
@@ -64,6 +64,23 @@ Use it in your html:
     </div>
 </div>
 ```
+
+###Automatic recalculation of height:
+ ```
+ <div id="parent">
+     <div id="sibling">I need some space too</div>
+     <div auto-height="recalculate-on-css-class-changes">
+         I stretch to the available height,
+         calculated from the height available from parent and my siblings.
+         Also, if the document changes height because of css class changes, I recalculate my height!
+     </div>
+ </div>
+ ```
+ 
+This is useful when dynamically changing the height of elements (e.g. when collapsing/expanding sections using http://angular-ui.github.io/bootstrap/#/collapse)
+
+_Note: This feature requires support of MutationObserver - see http://caniuse.com/#feat=mutationobserver_
+ 
 
 ## Community
 

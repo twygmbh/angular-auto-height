@@ -1,6 +1,6 @@
 {
   "name": "angular-auto-height",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "An AngularJS directive to automatically adjust the height of an element corresponding to the parent and siblings.",
   "browser": "index.js",
   "repository": {
