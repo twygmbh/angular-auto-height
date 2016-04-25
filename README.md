@@ -65,6 +65,16 @@ Use it in your html:
 </div>
 ```
 
+To use the CSS `min-height` property instead of `height` (in order to allow
+the container to expand further vertically), include a value of `min-height`:
+
+```
+<div class="article" auto-height="min-height">
+   This container will be at least as tall as the remaining on-screen space,
+   but will grow to fit any contents taller than that.
+</article>
+```
+
 ## Community
 
 ### Got a question?
