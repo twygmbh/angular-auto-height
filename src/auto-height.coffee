@@ -1,9 +1,9 @@
 ###*
-# @version 0.0.4
-# @copyright TWY GmbH [All Rights Reserved]
+# @version 0.0.5
+# @copyright Emanuel Imhof [All Rights Reserved]
 # @license MIT License (see LICENSE.txt)
 ###
-angular.module('twygmbh.auto-height', []).
+angular.module('m43nu.auto-height', []).
   directive 'autoHeight', [ '$window', '$timeout', ($window, $timeout) ->
     link: ($scope, $element, $attrs) ->
       combineHeights = (collection) ->
